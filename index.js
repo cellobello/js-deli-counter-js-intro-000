@@ -20,8 +20,7 @@ function currentLine(katzDeli) {
     return "The line is currently empty.";
   }
   else {
-    for (i = 0, i > katzDeli.length(), i++) {
-      console.log(i + ". " + katzDeli[i - 1] + ", ");
+   
     }
   }
 }
