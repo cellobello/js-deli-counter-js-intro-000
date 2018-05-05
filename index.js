@@ -26,3 +26,13 @@ function currentLine(katzDeli) {
 	}
   }
 }
+
+function practiceLoop1(katzDeli) {
+	lineString =["The line is currently: "]
+	for (var i = 0; i < (katzDeli.length -1); i++) {
+  		lineString.push( (i + 1) + ". " + katzDeli[i] + ", " );
+		}
+	
+	var currentLine = (lineString[0] + lineString[1] + lineString[2]);
+	return currentLine
+	}
