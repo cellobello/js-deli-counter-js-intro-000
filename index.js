@@ -18,21 +18,17 @@ function nowServing(katzDeli) {
 function currentLine(katzDeli) {
   if(katzDeli.length === 0) {
     return "The line is currently empty.";
-  }
-  else {
-    for (var i = 1; i < katzDeli.length; i++) {
-  		console.log( i + ". " + katzDeli[i] + ", " );
-		}
-	}
-  }
-}
-
-function practiceLoop1(katzDeli) {
-	lineString =["The line is currently: "]
+  } else {
+  lineArray = ["The line is currently: "];
 	for (var i = 0; i < (katzDeli.length -1); i++) {
-  		lineString.push( (i + 1) + ". " + katzDeli[i] + ", " );
+  		lineArray.push( (i + 1) + ". " + katzDeli[i] + ", " );
 		}
-	
-	var currentLine = (lineString[0] + lineString[1] + lineString[2]);
-	return currentLine
+	for (var j = (katzDeli.length-1); j < katzDeli.length; j++) {
+		lineArray.push((j + 1) + ". " + katzDeli[j]);
+    }
+	var lineString = lineArray.join('');
+	return lineString;
 	}
+}
+    
+		
